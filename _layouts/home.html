@@ -9,13 +9,16 @@ title: Home
     <a href="{{ site.github.url }}#">{{ post.title }}</a>
   </h3>
   {% if post.image %}
-  <span class="post-date">Made in {{ post.date | date: "%Y" }}</span>
+  <span class="post-date post-date-ved">Made in {{ post.date | date: "%Y" }}</span>
   <div class="thumbnail-container">
-    <a href="{{ site.github.url }}{{ post.url }}"><img src="{{ site.github.url }}/assets/img/{{ post.image }}"></a>
+    <a href="{{ site.github.url }}{{ post.project_link }}"><img src="{{ site.github.url }}/assets/img/{{ post.image }}"></a>
   </div>
   {% endif %}
   <p>
-    {{ post.content | strip_html | truncate: 500 }} <a href="{{ site.github.url }}{{ post.url }}">Read more</a>
+    {{ post.content | truncate: 500 }}
+    <!--
+    <a href="{{ site.github.url }}{{ post.url }}">Read more</a>
+    -->
   </p>
 </div>
 {% endfor %}
