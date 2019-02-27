@@ -246,8 +246,9 @@ hr {
   padding-right: 10px;
 }
 
+/* (VED) Originally float right */
 .social-icons {
-  float: right;
+  float: left;
 }
 
 .social-icons a {
