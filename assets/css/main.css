@@ -47,8 +47,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
 }
 
+/* (VED) Additional h3 styling */
+h3 {
+  font-size: 1.5rem;
+  margin: 0px;
+}
+
+/* (VED) Changed text-decoration to none */
 a {
-  text-decoration: underline;
+  text-decoration: none;
   color: #333;
 }
 
