@@ -64,7 +64,10 @@ a:hover {
   border-bottom: none;
 }
 
+/* (VED) Added fill-available tags */
 img {
+  width: -moz-available;
+  width: -webkit-fill-available;
   max-width: 100%;
   height: auto;
   border-radius: 5px;
