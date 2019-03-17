@@ -8,23 +8,25 @@ title: Home
   <h3>
     <a href="{{ site.github.url }}#{{ post.title  }}">{{ post.title }}</a>
   </h3>
-  <span style="margin-bottom: 0px; line-height: 1rem;" class="post-date post-date-ved">Made in {{ post.date | date:
+  {% if post.image %}
+  <span style="margin-bottom: 5px; line-height: 1rem;" class="post-date post-date-ved">Made in {{ post.date | date:
     "%Y"
     }}</span>
-  {% if post.image %}
   <!--
   <p style="margin-top: 0px; margin-bottom: 0.2rem;">{{ post.intro }}</p>
   -->
   <div class="thumbnail-container">
     <a href="{{ post.project_link }}"><img src="{{ site.github.url }}/assets/img/{{ post.image }}"></a>
   </div>
+  {% else %}
+  <span style="margin-bottom: 0px; line-height: 1rem;" class="post-date post-date-ved">Made in {{ post.date | date:
+    "%Y"
+    }}</span>
   {% endif %}
-  <p>
-    {{ post.content }}
-    <!--
+  {{ post.content }}
+  <!--
     <a href="{{ site.github.url }}{{ post.url }}">Read more</a>
     -->
-  </p>
 </div>
 {% endfor %}
 

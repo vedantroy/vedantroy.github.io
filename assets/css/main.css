@@ -137,7 +137,12 @@ hr {
   overflow: hidden;
   border-radius: 5px;
   margin-bottom: 25px;
-  box-shadow: 0px 2px 5px 2px #ccc;
+  box-shadow: 0px 2px 5px 2px #D3D3D3;
+  transition: all 0.2s ease 0s;
+}
+.thumbnail-container:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 2px 5px 2px #BFBFBF;
 }
 
 .thumbnail-container img{
